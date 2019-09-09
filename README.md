@@ -10,7 +10,7 @@ This module provides an improved GPS functionality with a better and faster accu
 - A device with Qualcomm Snapdragon chipset based.
 - Rooted with Magisk and Magisk Manager indeed installed.
 
-*__Note:__ Tested on the Xiaomi MI 5 running Android Nougat 7.1.2/LineageOS 14.1 and MIUI 9 Stable 9.5.2.0 and Android Oreo 8.1.0/LineageOS 15.1 and MIUI 10 Global Beta 8.6.21 with Magisk v16.4 (Beta).*
+*__Note:__ Tested on the Nexus 5X running AOSiP Pie and the XZ Premium running ZfSODP p-mr1.*
 
 ## Instructions
 __It's Magisk install-able, don't install it by TWRP but with Magisk instead!__
@@ -33,7 +33,7 @@ __It's Magisk install-able, don't install it by TWRP but with Magisk instead!__
 6. Same **_4, 5, 6 and 7_** steps of **_Option 1 - Manually_**.
 
 ## Notes
-1. Location mode __"Battery saving"__ is gone due to Google's location accuracy is now a binary setting. So consider using the __"High accuracy"__ mode one. 
+1. Location mode __"Battery saving"__ is removed in Android 9/Pie and above due to location service changes. To avoid Google location tracing, turn off __"Google Location Accuracy"__ in location settings (this still may provide some data to Google through the GPS supplement system).*
 2. Consider using the __GPS Locker__ app because it is much better than the __GPS Test__ and __GPS Data__. You just need to open it once and wait for fix, then your gps signal is locked and when you close it (just press __Cancel__ in __"Unlock GPS on exit"__ message) the app keep awake running in the background.
 3. GPS is made to work in outdoor places. For indoor/enclosed places such as inside of your house don't forget that, it will take a bit more to fix. It drains more battery, but is required if you're an advanced user that uses gps all the time.*  
    
@@ -42,14 +42,22 @@ __It's Magisk install-able, don't install it by TWRP but with Magisk instead!__
 - Initial release
 
 #### Version 2.0
-- Last update and final version. *Now it works fine for both Android Nougat & Oreo ROMs and is correctly replacing the gps.conf file in corresponding directory path.*
+- Last update and final version
+- Fix for Oreo devices where the gps.conf was in /vendor
 
 #### Version 2.1
-- Template 1500 -> 17000.
+- Template 1500 -> 17000
 
 #### Version 3
-- New Magisk Module format.
+- Enable MSA
+- New Magisk module format
+
+#### Version 4
+- Huge clean-up
+- All configurations explained
+- Enable C2K for faster locking
+- Support features on newer devices
+- Use RHEL's ntp.org time pool
 
 ## Links
-- [Module XDA Xiaomi MI 5 Forum Thread](https://forum.xda-developers.com/mi-5/how-to/step-step-definitive-gps-solution-global-t3695769)
-- [GitHub Module Page](https://github.com/Magisk-Modules-Repo/Global-Optimized-GPS-File-Replacer)
+- [GitHub Module Page](https://github.com/Magisk-Modules-Repo/optmizedgpsconf)

@@ -1,6 +1,6 @@
 id=optmizedgpsconf
 name=Global Optimized GPS File Replacer
-version=v3 (Revival)
-versionCode=3
-author=ianhughes74, JonasCardoso, Laster K. (lazerl0rd)
-description=This module replaces the default gps.conf file with a new one correctly edited for a better improvement and faster locking.
+version=v4
+versionCode=4
+author=ianhughes74, JonasCardoso, and lazerl0rd
+description=This module replaces the default gps.conf file with a new one edited for and faster locking.
