@@ -59,5 +59,9 @@ __It's Magisk install-able, don't install it by TWRP but with Magisk instead!__
 - Support features on newer devices
 - Use RHEL's ntp.org time pool
 
+#### Version 5
+- Increase intermediate positioning accuracy
+- Add China configuration
+
 ## Links
 - [GitHub Module Page](https://github.com/Magisk-Modules-Repo/optmizedgpsconf)

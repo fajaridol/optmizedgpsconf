@@ -122,25 +122,10 @@ REPLACE="
 # Set what you want to display when installing your module
 
 print_modname() {
-  ui_print "******************************"
-  ui_print "*                            *"
-  ui_print "*      GLOBAL OPTIMIZED      *"
-  ui_print "*      GPS FILE REPLACER     *"
-  ui_print "*                            *"
-  ui_print "*       by ianhughes74       *"
-  ui_print "*                            *"
-  ui_print "*           revived          *"
-  ui_print "*        by lazerl0rd        *"
-  ui_print "******************************"
-  ui_print "               _             "
-  ui_print "              (_)            "
-  ui_print "     ___ _ __  _  ___  _   _ "
-  ui_print "    / _ \ '_ \| |/ _ \| | | |"
-  ui_print "   |  __/ | | | | (_) | |_| |"
-  ui_print "    \___|_| |_| |\___/ \__, |"
-  ui_print "             _/ |       __/ |"
-  ui_print "            |__/       |___/ "
-  ui_print "                             "
+  ui_print "// Global GPS Improvement"
+  ui_print "//"
+  ui_print "//   by ianhughes74 and lazerl0rd"
+  ui_print ""
 }
 
 # Copy/extract your module files into $MODPATH in on_install.
