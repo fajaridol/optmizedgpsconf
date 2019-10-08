@@ -134,7 +134,7 @@ on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
-  if [ "$(getprop gsm.operator.iso-country)" == "cn" ]; then
+  if [[ "$(getprop gsm.operator.iso-country)" == *"cn"* ]]; then
     unzip -o "$ZIPFILE" 'system_CN/*' -d $MODPATH >&2
   else
     unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
