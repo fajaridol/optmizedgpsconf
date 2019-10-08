@@ -42,26 +42,29 @@ __It's Magisk install-able, don't install it by TWRP but with Magisk instead!__
 - Initial release
 
 #### Version 2.0
-- Last update and final version
 - Fix for Oreo devices where the gps.conf was in /vendor
 
 #### Version 2.1
-- Template 1500 -> 17000
+- Magisk template update
 
 #### Version 3
-- Enable MSA
-- New Magisk module format
+- Enable MSA capability
+- Switch to the new Magisk module format
 
 #### Version 4
-- Huge clean-up
-- All configurations explained
-- Enable C2K for faster locking
-- Support features on newer devices
-- Use RHEL's ntp.org time pool
+- A re-write of the config
+- Comments for each feature
+- Add a C2K PDE server
+- Support more plane modes
+- Use RHEL's NTP servers by default
 
 #### Version 5
 - Increase intermediate positioning accuracy
-- Add China configuration
+- Add a configuration for Chinese devices
+
+#### Version 6
+- Remove bogus C2K PDE server
+- Add support for multi-SIM Chinese devices
 
 ## Links
 - [GitHub Module Page](https://github.com/Magisk-Modules-Repo/optmizedgpsconf)
