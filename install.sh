@@ -135,10 +135,9 @@ on_install() {
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
   if [[ "$(getprop gsm.operator.iso-country)" == *"cn"* ]]; then
-    unzip -o "$ZIPFILE" 'system_CN/*' -d $MODPATH >&2
-  else
-    unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+    rm -rf system && mv system_CN system
   fi
+  unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
 }
 
 # Only some special files require specific permissions
